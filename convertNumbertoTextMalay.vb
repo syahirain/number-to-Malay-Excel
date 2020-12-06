@@ -1,6 +1,6 @@
 Option Explicit
 'Main Function
-Function EjasNombor(ByVal MyNumber)
+Function EjaNombor(ByVal MyNumber)
     Dim Dollars, Cents, Temp, Only
     Dim DecimalPlace, Count
     ReDim Place(9) As String
@@ -44,7 +44,7 @@ Function EjasNombor(ByVal MyNumber)
               Case Else
             Cents = "" & Cents & "Sen "
     End Select
-    EjasNombor = Dollars & Cents & Only
+    EjaNombor = Dollars & Cents & Only
 End Function
  
 Function GetHundreds(ByVal MyNumber)
